@@ -1,11 +1,17 @@
 import React from 'react'
-import Home from './Landing'
 import 'antd/dist/antd.css'
+import {BrowserRouter} from 'react-router-dom'
+import {Switch} from 'react-router'
+import {routes} from './app/routes'
 
 
-const App = ({props}) => {
+const App = () => {
   return (
-    <Home />
+    <BrowserRouter>
+      <Switch>
+        {routes}
+      </Switch>
+    </BrowserRouter>
   )
 }
 

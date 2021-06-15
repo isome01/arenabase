@@ -1,6 +1,6 @@
 import React from 'react'
 import ajax from './ajax'
-import Validators from 'steelrose/config/validators'
+import Validators from './validators'
 import browserStorage from './browserStorage'
 import {fromJS} from 'immutable'
 
